@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-mw-dictionary-api",
+  "version": "1.0.0",
+  "description": "A simple node.js application to fetch words' etymology, def, partofspeech, and pronunciation using Merriam Webster dictionaryapi. This is helpful to prepare for Scripps National Spelling Bee",
+  "main": "dictionary.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbhumir/nodejs-mw-dictionary-api.git"
+  },
+  "author": "Sirisha Bhumireddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbhumir/nodejs-mw-dictionary-api/issues"
+  },
+  "homepage": "https://github.com/sbhumir/nodejs-mw-dictionary-api#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.1",
+    "xlsx": "^0.16.8"
+  }
+}
