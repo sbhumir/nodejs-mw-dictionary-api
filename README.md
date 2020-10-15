@@ -2,12 +2,11 @@
 A simple node.js application to fetch words' etymology, definition, part of speech, and pronunciation using Merriam Webster dictionary api. This is helpful to prepare for Scripps National Spelling Bee
 
 ## Requirements
-
-Use npm to install the following modules 
+Install the following npm packages
 ```bash
-  npm install node-fetch
-  npm install xlsx
-  npm install dotenv
+  $ npm install node-fetch
+  $ npm install xlsx
+  $ npm install dotenv
 ```
 API Key: Register/Sign to https://dictionaryapi.com/ to get dictionary API Key.
  
