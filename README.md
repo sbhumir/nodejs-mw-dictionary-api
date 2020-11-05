@@ -2,7 +2,7 @@
 A simple node.js application to fetch words' etymology, definition, part of speech, and pronunciation using Merriam Webster dictionary api. This is helpful to prepare for Scripps National Spelling Bee
 
 ## Requirements
-Install the following npm packages
+Install the following npm packages or nom install - which is going to install the packages in this wrk directory package.json
 ```bash
   $ npm install node-fetch
   $ npm install xlsx
@@ -26,8 +26,7 @@ For Mac:  export KEY=<YOUR_DICTIONARY_KEY>
 
 There is a sample words.xlsx file in this repo. Add as many words as you want and run the following file. If the word does not exist in collegiate dictionary, it skips that word. 
 
-## Running the node .js file
+## Usability
 
-Usability: Run the following js file
 ```bash
- node dictionary.js
+ $ npm run test
