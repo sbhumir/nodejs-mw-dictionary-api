@@ -15,8 +15,9 @@ const workbook = XLSX.readFile('words.xlsx');
 // get first sheet
 var sheet1 = workbook.SheetNames[0];
 var worksheet = workbook.Sheets[sheet1];
-//use async/await
-(async function main() {
+
+//get word details from m-w dictionary
+function getWordFromDict() {
     try {
         // read words from the cells that have words
         for (var i = 2; worksheet[`A${i}`] != undefined; i++) {
@@ -25,8 +26,8 @@ var worksheet = workbook.Sheets[sheet1];
             //console.log('url ', url);
             var results = [];
 
-            //await fetch until the specific word details are fetched from merriam webster
-            await fetch(url)
+            //fetch the specific word details from merriam webster
+            fetch(url)
                 .then(res => res.json())
                 .then(json => {
                     if (json != undefined) {
@@ -73,4 +74,5 @@ var worksheet = workbook.Sheets[sheet1];
     } catch (e) {
         console.log(e.message);
     }
-})();
+};
+getWordFromDict();
